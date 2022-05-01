@@ -21,6 +21,9 @@ async function run() {
         const serviceCollection = client.db('geniusCarService').collection('service');
         const orderCollection = client.db('geniusCarService').collection('order');
         // Get Multiple collection 
+        app.get('/', (req, res) => {
+            res.send('Hi! I am Md. Mahbub Alam')
+        })
         app.get('/service', async (req, res) => {
             const query = {}
             const cursor = serviceCollection.find(query);
