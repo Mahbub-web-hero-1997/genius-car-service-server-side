@@ -1,0 +1,7 @@
+/* create file for server side
+
+1. open cmd and commend mkdir (file name here).
+2. mpm init -y
+3. npm i express cors mongodb dotenv
+
+*/
